@@ -1,0 +1,273 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+@layer base {
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:focus,
+  textarea:-webkit-autofill,
+  textarea:-webkit-autofill:hover,
+  textarea:-webkit-autofill:focus,
+  select:-webkit-autofill,
+  select:-webkit-autofill:hover,
+  select:-webkit-autofill:focus {
+    color: white !important;
+    background: transparent !important;
+    transition: background 50000s ease-in, color 50000s ease-in;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+  html {
+    @apply overflow-x-hidden text-base;
+  }
+  body {
+    @apply  text-black bg-white;
+  }
+  p {
+    @apply leading-6;
+  }
+
+  .font-76 {
+    @apply text-76 font-semibold;
+  }
+  .font-46 {
+    @apply text-46;
+  }
+  .font-36 {
+    @apply text-36;
+  }
+  .font-26 {
+    @apply text-26;
+  }
+  .font-22 {
+    @apply text-22;
+  }
+  .font-20 {
+    @apply text-20;
+  }
+  .font-18 {
+    @apply text-18;
+  }
+  .font-16 {
+    @apply text-16;
+  }
+}
+
+@layer components {
+  .form-input {
+    @apply bg-primary-600 h-[60px] text-primary-900 px-[30px] py-[24px] rounded-20 right-0 outline-0 focus:outline-0 ring-0 focus:ring-0;
+  }
+  .ax-center {
+    @apply absolute left-1/2 -translate-x-1/2;
+  }
+  .ay-center {
+    @apply absolute top-1/2 -translate-y-1/2;
+  }
+  .a-center {
+    @apply absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2;
+  }
+  .flex-center {
+    @apply flex items-center justify-center;
+  }
+  .fij {
+    @apply flex items-center justify-center;
+  }
+  .btn {
+    @apply text-22 text-white  font-medium py-3 px-8 min-w-[100px] h-[60px] gap-4 flex-center;
+  }
+  .btn-primary {
+    @apply bg-primary-400;
+  }
+  .btn-secondary {
+    @apply bg-primary-300;
+  }
+  .btn-outline-white {
+    @apply border border-white;
+  }
+  .blue-btn{
+    @apply bg-primary-100 font-semibold text-white px-6 py-3 rounded-[50px];
+  }
+  .gray-btn{
+    @apply bg-[#EBEBEB] text-18 text-[#12171B]  font-semibold font-inter px-6 py-3 rounded-[50px];
+  }
+  .para-18{
+    @apply leading-7 text-primary-400 font-inter font-normal text-18
+  }
+  .para-bold-18{
+    @apply leading-7 text-primary-400 font-semibold  text-18
+  }
+  .para-14{
+    @apply leading-6 text-primary-400 font-inter font-normal text-14
+  }
+  .para-16{ 
+    @apply leading-6 text-[#12171B] font-inter font-semibold text-16
+  }
+  .para-bold-18{
+    @apply leading-6 text-[#12171B] font-inter font-semibold text-18
+  }
+  .head-40{
+    @apply text-[#12171B] font-outfit font-semibold text-[30px]  lg:text-[40px] leading-8 md:leading-[50px]
+  }
+  .head-24{
+    @apply text-[#272D39] font-outfit font-semibold text-24 
+  }
+  .head-30{
+    @apply text-[#12171B]  font-outfit font-semibold text-[30px] leading-9
+  }
+  .head-bold{
+    @apply text-[#3A3939]  font-outfit font-bold text-18 leading-7
+  }
+  .image{
+    @apply h-full w-full object-cover
+  }
+  .border-primary {
+    @apply border border-[#EDEAEA]
+  }
+  .table-data{
+    @apply para-18 px-10
+  }
+  .table-head{
+    @apply para-16 w-[165px] px-2 py-5
+  }
+  .table-left{
+    @apply para-18  text-left p-5
+  }
+
+
+}
+
+@layer utilities {}
+
+.react {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 250px;
+  height: 250px;
+  margin-top: -125px;
+  margin-left: -125px;
+  cursor: 'pointer';
+}
+
+#notif {
+  visibility: hidden;
+  position: fixed;
+  color: white;
+  border-radius: 10px;
+  top: 0;
+  right: 0;
+  transform: translate(-15px, 15px);
+  border-radius: 10px;
+  overflow: hidden
+}
+
+.notif-text-icon {
+  align-items: stretch;
+  box-shadow: 0 1px 1px rgb(10 10 10 / 10%);
+  display: flex;
+  max-width: 250px;
+}
+
+.notif-message {
+  align-items: center;
+  display: flex;
+  flex-grow: 1;
+  font-weight: 700;
+  padding: 15px 25px;
+}
+
+#notif.show {
+  visibility: visible;
+  animation: show 0.5s forwards;
+}
+
+@keyframes show {
+  0% {
+    transform: translate(-15px, 15px) scale(0);
+  }
+
+  50% {
+    transform: translate(-15px, 15px) scale(1.2);
+  }
+
+  70% {
+    transform: translate(-15px, 15px) scale(0.9);
+  }
+
+  100% {
+    transform: translate(-15px, 15px) scale(1);
+  }
+}
+
+.hero-section{
+  background-image: url("/public/images/Hero/heroImg2.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.faq-bg{
+  background-image: url("/public/images/HomeSlider/faqImg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media screen and (max-width: 700px) {
+  .faq-bg{
+    background-image: url("/public/images/smallFaq.png");
+    background-repeat: no-repeat;
+  }
+}
+
+.slider::-webkit-scrollbar {
+  display: none;
+}
+
+.spinner {
+  width: 56px;
+  height: 56px;
+  display: grid;
+  border-radius: 50%;
+  -webkit-mask: radial-gradient(farthest-side,#0000 40%,#474bff 41%);
+  background: linear-gradient(0deg ,rgba(71,75,255,0.5) 50%,rgba(71,75,255,1) 0) center/4.5px 100%,
+       linear-gradient(90deg,rgba(71,75,255,0.25) 50%,rgba(71,75,255,0.75) 0) center/100% 4.5px;
+  background-repeat: no-repeat;
+  animation: spinner-d3o0rx 1s infinite steps(12);
+}
+
+.spinner::before,
+.spinner::after {
+  content: "";
+  grid-area: 1/1;
+  border-radius: 50%;
+  background: inherit;
+  opacity: 0.915;
+  transform: rotate(30deg);
+}
+
+.spinner::after {
+  opacity: 0.83;
+  transform: rotate(60deg);
+}
+
+@keyframes spinner-d3o0rx {
+  100% {
+     transform: rotate(1turn);
+  }
+}
+
+
+.error{
+  color: red;
+  font: 600;
+}

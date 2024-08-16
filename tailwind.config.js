@@ -1,0 +1,77 @@
+module.exports = {
+  content: [
+    './app/**/*.html',
+    './app/components/**/*.js',
+    './app/containers/**/*.js',
+  ],
+  darkMode: 'class',
+  theme: {
+    extend: {
+      boxShadow: {
+        primary: '0 4px 100px 0px #0000001A',
+        secondary: '0 4px 100px 0px #0000000D',
+        shadow3: '0 4px 100px 0px #0000001A',
+      },
+      fontFamily: {
+        ubuntu: ['Ubuntu', 'sans-serif'],
+        comfortaa: ['Comfortaa', 'sans-serif'],
+        poppins: ['Poppins', 'sans-serif'],
+        mont: ['Montserrat', 'sans-serif'],
+        barlow: ['Barlow', 'sans-serif'],
+        inter: ['Inter', 'sans-serif'],
+        outfit: ['Outfit', 'sans-serif'],
+      },
+      fontSize: {
+        10: '10px',
+        12: '12px',
+        14: '14px',
+        15: '15px',
+        16: '16px',
+        18: '18px',
+        20: '20px',
+        22: '22px',
+        24: '24px',
+        26: '26px',
+        36: '36px',
+        46: '46px',
+        76: '76px',
+      },
+      colors: {
+        primary: {
+          100: '#2B53D6',
+          200: '#1AB57D',
+          300: '#F5F7FF',
+          400: '#3A3939',
+          500: '#EDEAEA',
+          600: '#ffffff14',
+          700: '#F9B223',
+          800: '#ECECEC',
+          900: '#B1B1B5',
+          1000: '#70798B',
+          1100: '#2B3541',
+        },
+      },
+      borderRadius: {
+        20: '20px',
+      },
+    },
+    screens: {
+      sm: '	640px',
+      md: '768px',
+      lg: '1024px',
+      xl: '1280px',
+      '2xl': '1536px',
+    },
+    container: {
+      center: true,
+      padding: {
+        DEFAULT: '1rem',
+        sm: '1rem',
+        md: '1rem',
+        lg: '1rem',
+        xl: '1rem',
+        '2xl': '1rem',
+      },
+    },
+  },
+};
